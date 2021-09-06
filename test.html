@@ -1,0 +1,718 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SamTestWebApp</title>
+  </head>
+  <body>
+    <script>
+      // console.log(`half of 100 is ${100 / 2}`);
+      // console.log(`half of 100 is ${100 / 2}`);
+      // console.log( 3>2);
+      // console.log(2>5);
+      // console.log(true ? 1:2);
+      // console.log(false? 3:8);
+      // let mood = 5;
+      // console.log(mood);
+      // let yourName = String(prompt("What is your name"));
+      //console.log("Congratulations "+ yourName);
+
+      //  let theNumber = Number(prompt("Find the square of"));
+      //  if (!Number.isNaN(theNumber)) {
+      //      console.log(theNumber*theNumber);
+      //  }
+      //  else{
+      //      console.log("Hey that is not a number");
+      // }
+
+      //    let theNumber = Number(prompt("Input a number"));
+      //    if (theNumber<10) {
+      //        console.log("small");
+      //    }
+      //    else if (theNumber<100) {
+      //        console.log("medium");
+      //    }
+      //    else if(theNumber<1000){
+      //        console.log("large");
+      //    }
+      //    else{
+      //        console.log("very large");
+      //    }
+      // let theNumber = 1;
+      // while (theNumber<=12) {
+      //     console.log(theNumber);
+      //     theNumber=theNumber+2;
+
+      // }
+      // {
+      //     console.log("You are welcome!!");
+      // }
+
+      // let result = 1;
+      // let counter = 0;
+      // while (counter<10) {
+      //     result=result*2;
+      //     counter=counter+1;
+      // }
+      // console.log(result);
+      // let result = 1;
+      // let theNumber = Number(prompt("Enter the number"));
+      // let thePower = Number(prompt("Enter the power"));
+      // for (let counter = 0; counter < thePower; counter+=1) {
+      //      result=result*theNumber;
+
+      //  }
+      //  console.log(result);
+
+      // Create
+      // #
+      // ##
+      // ###
+      // ####
+      // #####
+      // ######
+      // #######
+
+      // Answer is below
+
+      // let result = String("");
+      // for (let counter = 0; counter < 7; counter+=1) {
+      //     result =result + "#"
+      //      console.log(result);
+
+      //  }
+
+      //Write a program that uses console.log to print all the numbers from 1 to 100,
+      //with two exceptions. For numbers divisible by 3, print "Fizz" instead of the
+      //number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
+      //When you have that working, modify your program to print "FizzBuzz" for
+      //numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz"
+      //for numbers divisible by only one of those).
+
+      // let theNumber = Number();
+      // for (let counter = 0; counter < 100; counter+=1) {
+      //     theNumber =theNumber+1;
+      //     if (theNumber % 3 == 0 && theNumber % 5 == 0) {
+      //              console.log("FizzBuzz");
+      //             }
+      //     else if (theNumber % 3 == 0) {
+      //         console.log("Fizz");
+      //     }
+      //     else if (theNumber % 5 == 0) {
+      //             console.log("Buzz");
+      //         }
+
+      //           else{
+      //          console.log(theNumber);
+      //     }
+
+      //}
+
+      ///Write a program that creates a string that represents an 8×8 grid,
+      //using newline characters to separate lines. At each position of the
+      //grid there is either a space or a "#" character. The characters should
+      //form a chessboard.
+
+      //Passing this string to console.log should show something like this:
+      //  # # # #
+      // # # # #
+      //  # # # #
+      // # # # #
+      //  # # # #
+      // # # # #
+      //  # # # #
+      // # # # #
+
+      // TEST 1
+
+      // let spaceHash = String("#*");
+      // let widthGrid = function(spaceHash){
+      //     spaceHash.length;
+      // }
+      // widthGrid = prompt("Enter the width of the grid");
+      // let lengthGrid = Number(prompt("Enter the length of the grid"));
+      // for (let counter = 0; counter < lengthGrid; counter+=1) {
+      //     spaceHash = spaceHash;
+      //     console.log(spaceHash);
+
+      // }
+
+      //FAIL!!
+
+      //TEST 2
+
+      // let star = String("*");
+      // let hash = String("#");
+      // let leftDim = String();
+      //     for (let ycounter = 0; ycounter < 8; ycounter+=1 ) {
+
+      //             for (let xcounter = 0; xcounter < 8; xcounter+=1) {
+      //                 if (xcounter%2 == 0) {
+      //                    leftDim += star
+      //             }
+
+      //         }
+      //         else{
+      //             console.log(hash);
+      //         }
+
+      // }
+
+      //TEST 3
+
+      // var size = 8; //this is the variable setting
+
+      // var board = "";//this is the empty string we're going to add either ' ' , '#' or newline
+
+      // for (var y = 0; y < size; y++) {   /*in the outer loop we add newline to seperate rows*/
+      //   for (var x = 0; x < size; x++) {/*every inner loop rappresents a line, and alternatively it's adding either ' ' or '#' to the string that's being populated*/
+      //     if ((x + y) % 2 == 0)
+      //       board += " ";
+      //     else
+      //       board += "#";
+      //   }
+      //   board += "\n";
+      // }
+
+      // console.log(board);
+
+      //.........................TEST 3................WORKS!!!!!!!!!!!!!............................
+
+      // let size = Number(prompt("Enter size of grid"));
+      // let board = String();
+
+      // for (let y = 0; y < size; y++) {
+
+      //     for (let x = 0; x < size; x++) {
+      //     if ((x+y) % 2 == 0) {
+      //         board += "*";
+      //     }
+      //     else{
+      //         board += "#";
+      //     }
+      // }
+      // board +="\n";
+      // }
+
+      // console.log(board);
+
+      //------------------------------------FUNCTIONS--------------------------------------------
+
+      // function square(x,y) {
+      //     return (x*y);
+      // };
+      // console.log(square(5,6));
+
+      //  const square = function(x){
+
+      //  return(x*x);
+      //  };
+      //  console.log(square(5));
+
+      //  function makeNoise() {
+      //      console.log("Bang!!");
+      //  };
+
+      //  makeNoise();
+
+      //  function power(base,exponent) {
+      //      let result=1
+      //      for (let counter = 0; counter < exponent; counter++) {
+      //          result *= base;
+      //      }
+      //      return(result);
+      //  };
+      //  console.log(power(10,2));
+
+      // const hummus = function(factor) {
+      //   const ingredient = function(amount, unit, name) {
+      //     let ingredientAmount = amount * factor;
+      //     if (ingredientAmount > 1) {
+      //       unit += "s";
+      //     }
+      //     console.log(`${ingredientAmount} ${unit} ${name}`);
+      //   };
+      //   ingredient(1, "can", "chickpeas");
+      //   ingredient(0.25, "cup", "tahini");
+      //   ingredient(0.25, "cup", "lemon juice");
+      //   ingredient(1, "clove", "garlic");
+      //   ingredient(2, "tablespoon", "olive oil");
+      //   ingredient(0.5, "teaspoon", "cumin");
+      // };
+      // hummus(1);
+
+      // function greet(who) {
+      //     console.log("Hello " + who);
+      // }
+      // greet("Harry");
+      // console.log("Bye");
+
+      // function square(x) {
+      // return (x*x);
+
+      // }
+      // console.log(square(4, true, "go"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // function outerFunction(outerParams) {
+      //     return function innerFunction(innerParams) {
+      //         console.log("Outer Parameter: " + outerParams);
+      //         console.log("Inner Parameter: " + innerParams);
+      //     }
+
+      // }
+      // const newFunction = outerFunction("outside");
+      // newFunction("inside")
+
+
+
+
+
+
+
+// function power(base, exponent) {
+//     let result = 1;
+//     for (let index = 0; index < exponent; index++) {
+        
+//         result *= base;
+//     }
+//     return (result);
+// }
+// console.log(power(2,7));
+
+
+
+
+
+
+
+//  function pow(base, expo) {
+//    if (expo == 0) {
+//      return 1;
+//    } else {
+//      return base * pow(base, expo - 1);
+//    }
+//  }
+
+//  console.log(pow(2, 3));
+
+
+
+
+
+
+
+// function findSolution(target) {
+//   function find(current, history) {
+//     if (current == target) {
+//       return history;     
+//   } 
+//   else if (current > target) {
+//     return null;    
+//   } 
+//   else{
+//     return find(current + 5, `(${history} + 5)`) ||  
+//            find(current * 3, `(${history} * 3)`);
+//   }
+//   }
+//   return find(1, "1");
+// }
+
+// console.log(findSolution(24));
+
+
+
+
+
+// function printFarmInventory(cows, chicken) {
+//   let cowString = String(cows);
+//   while (cowString.length < 3) {
+//     cowString = "0" + cowString;
+//   }
+//   console.log(`${cowString}  Cows`);
+
+
+//   let chickenString = String(chicken);
+//   while (chickenString.length < 3) {
+//     chickenString = "0" + chickenString;
+//   }
+//   console.log(`${chickenString}  Cows`);
+// }
+// printFarmInventory(2,5)
+
+
+
+
+
+
+
+
+
+
+
+
+// function printZeroPaddedNumberWithLabel(number, label) {
+//   let numberString = String(number);
+//   while (numberString.length < 3) {
+//     numberString = "0" + numberString;
+//   }
+//   console.log(`${numberString} ${label}`);
+// }
+
+
+
+// function printFarmInventory(cows, chicken, pigs) { 
+// printZeroPaddedNumberWithLabel (cows, "Cows");
+// printZeroPaddedNumberWithLabel (chicken, "Chicken");
+// printZeroPaddedNumberWithLabel (pigs, "Pigs")
+  
+// }
+
+
+// printFarmInventory(1,5,7)
+
+
+// Answer
+// 001 Cows
+// 005 chicken 
+// 007 Pigs
+
+
+
+
+
+
+
+
+
+
+
+
+// -----------------------------------------QUIZ-----------------------------------
+
+// Minimum
+// The previous chapter introduced the standard function 
+// Math.min that returns its smallest argument. We can 
+// build something like that now. Write a function min 
+// that takes two arguments and returns their minimum.
+
+
+// function min(a,b) {
+//   if (a<b) {
+//     return a;
+//   }
+//   else if (b<a) {
+//     return b;  
+//   }
+//   else if(a==b){
+
+//     return "equal";
+//   }
+// }
+// console.log(min(0,0));
+
+
+
+// Define a recursive function isEven corresponding 
+// to this description. 
+// The function should accept a single parameter 
+// (a positive, whole number) and return a Boolean.
+
+// Test it on 50 and 75. See how it behaves on -1. 
+// Why? Can you think of a way to fix this?
+
+
+
+
+
+
+// function isEven(x) {
+//   if (x < 0) {
+//     return isEven(-x);
+//   }
+//   else if (x == 0) {
+//     return true;
+    
+//   }
+//   else if (x == 1) {
+//     return false;
+    
+//   }
+//   else {
+//     return isEven(x-2)
+      
+//     } 
+    
+//   }
+  
+  
+
+// console.log(isEven(-4));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function countBs(strng) {
+//   let result = 0
+//   for (let i = 0; i < strng.length; i++) {
+//     if (strng[i] == "B") {
+//       result = result + 1;
+//     }
+    
+//   }
+//   return result;
+// }
+
+// console.log(countBs("BBBBBBC"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function countChar(strng, char) {
+  
+//   let result = 0;
+//   for (let i = 0; i< strng.length; i++) {
+//   if (strng[i] == char) {
+//     result += 1;
+//   }
+//  }
+//  return result;
+// }
+
+// console.log(countChar("sdassddaaasda", "a"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let list = [2,4,5,7,8,3];
+
+// console.log(list[2-1]);
+
+
+
+
+
+
+// let doh = "Doh";
+// console.log(doh.toUpperCase());
+
+
+// let sequence = [1,2,3];
+// sequence.push(4);
+// sequence.push (5);
+
+// console.log(sequence);
+
+// console.log(sequence.pop());
+
+// console.log(sequence);
+
+
+
+
+
+
+
+// function phi(table) {
+//   return (table[3]*table[0] - table[2] * table[1]) /
+//   Math.sqrt((table[2] + table[3]) *
+//             (table[0] + table[1]) *
+//             (table[1] + table[3]) *
+//             (table[0] + table[2]));
+
+// }
+// console.log(phi([76,9,4,1]));
+
+
+
+
+
+
+// 
+
+
+
+
+// function range(start,end) {
+
+//   let array = []
+//   for (let counter = 0; counter < end; counter++) {
+//     array.push(start);
+//     start += 1;
+//   }
+//   return array;
+// }
+
+// function sum(range) {
+  
+//     let result = 0;
+//     for (let counter = 0; counter < range.length; counter++) {
+//       result = result + range[counter];
+      
+//     }
+//     return result;
+
+//   }
+  
+  
+// console.log(sum(range(5,2)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function range(start,end,step) {
+//   let array = [];
+//   step = step || 1;
+//   if (start < end) {
+//     for (let index = start; index <= end; index += step) {
+//       array.push(index);
+//     }
+//   }
+//   else {
+//     for (let index = start; index >= end ; index += step) {
+//       array.push(index);
+      
+//     }
+//     return array;
+    
+//   }
+// }
+
+// function sum(array) {
+//   total = 0;
+//   for (let index = 0; index < array.length; index++) {
+//     total = total + array[index];
+    
+//   }
+//   return total;
+
+  
+// }
+
+
+
+// console.log(sum(range(10,1,-1)));
+
+console.log();
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
